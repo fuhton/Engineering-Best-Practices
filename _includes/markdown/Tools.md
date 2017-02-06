@@ -57,6 +57,8 @@ For security of your deployment, it's imperative to follow the above recommendat
 
 When deploying code and using the WordPress enqueue system, it's imperative to only have relevant code on the page. Sometimes there is a special page or feature that uses an extra library and instead of requiring this on every page, rely on WordPress to enqueue the file for you. Instead of compiling all your dependencies needed by any feature on your site into one file, compile a few core libraries or tools for use on every page and only enqueue what you need on any given page. This will reduce page load, simplify architecture by making it clear where dependencies get used, and avoid conflict with other plugins or themes on your site.
 
+When deploying code and using the WordPress enqueue system, it's imperative to only have relevant code on the page. Sometimes there is a special page or feature that uses an extra library and instead of requiring this on every page, rely on WordPress to enqueue the file for you. Instead of compiling all your dependencies needed by any feature on your site into one file, compile a few core libraries or tools for use on every page and only enqueue what you need on any given page. This will reduce page load, simplify architecture by making it clear where dependencies get used, and avoid conflict with other plugins or themes on your site.
+
 <h3 id="command-line">Command Line Tools</h3>
 
 [WP-CLI](http://wp-cli.org) - A command line interface for WordPress. This is an extremely powerful tool that allows us to do imports, exports, run custom scripts, and more via the command line. Often this is the only way we can affect a large database (WordPress.com VIP or WPEngine). This tool is installed by default on VVV and VIP Quickstart.
